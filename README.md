@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Cube Timer
 
-## Getting Started
+## Deskripsi
+Cube Timer adalah aplikasi pencatat waktu berbasis web yang dirancang khusus untuk para pemain Rubik's Cube. Aplikasi ini mengusung desain antarmuka bergaya Neobrutalism yang dicirikan dengan warna-warna kontras tinggi, garis pinggir yang tebal, dan bayangan hitam solid yang memberikan kesan tegas serta modern. Timer ini dibuat untuk mensimulasikan penggunaan timer kompetisi resmi, di mana pengguna harus menahan tombol spasi (atau menahan sentuhan pada gawai) hingga indikator siap menyala, dan waktu akan mulai berjalan tepat ketika tombol dilepaskan. Aplikasi ini juga terintegrasi dengan generator algoritma pengacakan, sistem penyimpanan riwayat penyelesaian secara lokal, dan kalkulasi statistik otomatis.
 
-First, run the development server:
+## Tech Stack
+- Next.js 15 (App Router)
+- React
+- TypeScript
+- Tailwind CSS
+- Lucide React
+- next-pwa
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Fitur
+- Desain Antarmuka Neobrutalism: Tampilan responsif yang unik dengan estetika pop-art brutalist.
+- Timer Presisi: Memanfaatkan kalkulasi waktu bawaan peramban tingkat milidetik yang akurat.
+- Mekanisme Kontrol Standar: Kontrol kompetisi menggunakan tombol spasi untuk komputer dan layar sentuh untuk ponsel cerdas.
+- Mode Layar Fokus: Elemen navigasi, statistik, dan riwayat akan otomatis menghilang (expand) ketika timer bersiap atau sedang berjalan, memberikan pengalaman bebas gangguan mekanik.
+- Generator Pengacakan WCA: Menghasilkan notasi pengacakan acak standar World Cube Association sebelum setiap penyelesaian dilakukan.
+- Manajemen Sesi Lokal: Seluruh riwayat penyelesaian disimpan dengan aman di dalam penyimpanan peramban tanpa memerlukan koneksi basis data server.
+- Kalkulasi Statistik Terpadu: Menampilkan waktu penyelesaian tercepat (Personal Best), Rata-rata 5 penyelesaian terakhir (Average of 5), dan Rata-rata 12 penyelesaian terakhir (Average of 12) menggunakan algoritma pemotongan standar kompetisi.
+- Dukungan Progressive Web App: Dapat diinstal langsung dari peramban menjadi aplikasi mandiri berlogo di gawai ponsel pintar maupun komputer, serta sanggup beroperasi secara luring (offline) alias tanpa akses sinyal internet.
+- Modal Pengaturan Kustom: Memberikan peringatan hapus riwayat sesi lengkap dengan warna sesuai tema situs yang ramah antarmuka.
